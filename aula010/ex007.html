@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somando números</title>
+    <style>
+        body {
+            font: normal 18pt arial;
+            background-image: linear-gradient(to right, #F2CB05, #F29F05, #F28705);
+            text-align: center;
+        }
+        div#res{
+          margin-top: 20px; 
+        }
+        main{
+          background-color: white;
+          width: 600px;
+          padding: 10px;
+          box-shadow: 10px 10px 10px rgba(156, 88, 5, 0.437);
+          border-radius: 15px;
+          margin: auto; 
+        }
+        h1 {
+          color:#267365 ;  
+          text-shadow:1px 1px 2px #1b5046 ;
+}
+        
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">O resultado de x + x é igual a y</div>
+    </main>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `O resultado de ${n1} + ${n2} é igual a ${s}`
+        }
+    </script>
+</body>
+</html>

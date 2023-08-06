@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAIS</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    País de nascimento <input type="text" name="txtpaís" id="txtpaís">
+    <input type="button" value="Ok" onclick="país()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function país() {
+            var txtp = window.document.getElementById('txtpaís')
+            var res = window.document.querySelector('div#res')
+            var país = Text (txtp.value)
+            res.innerHTML = `<p>seu país é ${txtp}</p>`
+        }
+    </script>
+</body>
+</html>

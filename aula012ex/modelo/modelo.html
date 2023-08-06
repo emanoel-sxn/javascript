@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisando Data e Hora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section id="saida">
+        <div>
+            <p>Ano de nascimento</p> <input type="number" name="txtano" id="txtano" min="0">
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">    
+            </p>
+            </div> 
+            <div id="res">
+                <p>Preencha os campos acima para ver os resultados</p>
+            </div>
+        </section>
+    <script src="relogio.js"></script>
+</body>
+</html>
